@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: hEWVr+JQwEToyjltFfIUtDtT6OI8diBjVo8GXvvlPet95ce32wt25m2XG2WXRaqtifTUtCzzrksOzLHUB+8BrWu4Hpqe4SPFD+GZMMwvYxcj5JyR/hFkpzWGZoTJJTpHqJJVWr+QaTTvzZCJOLnb7AF53ACygumgsRqbn4IJbb592Tp2XQb1DTAkK+CSPUnV9TTJnrfH44myQ7tSvdYicPAzHeFYCOuMAQH7mf51mVYqotDzCNFC9tk4aQANQjly9tu2/+QS8Vek/G+LSHyCBlFUkQ7DxO550frSitykWoxVRkNQ98qBni2rq/DQr2uopJxdGg9E82BZgp+s00sFdWGkTSPgz4DcSiWDDUkZkxuR/dfxoNBVeNUljZGhobL/VYCYkvdxMZANYnnyc8YeKp5IkoXUiBgWuyXz19AEt+NfR4vCbl0S0vxPOnu3QjUjfF6tMN0zX1Ab3ETPZfY9xkNFtFXOb44rLksNa5JIVQZSxk3SFiQlirk/mu+A+lqeY/tV08L4HQENm9a8s+OVdUb/Een0rkiYMQPpp3X6kl8ec/FNatrCMeRsu2H0WoN48VJT7Kl1ZXqwr6pAQEO0z7uBieHwN5zQPj8ef+Ga5zkLmGsi97qNJtZ8UHhaAkB/FeVRYVcR+o07CNOwlcDc/8dsWap2Y2uMqd8O2oh2z/Q=
+  app: sheltered-oasis-93653
+  on:
+    repo: amandareilly/node-restaurants-app-mongoose
+    branch: feature/with-tests
